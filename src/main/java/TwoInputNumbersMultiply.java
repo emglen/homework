@@ -2,14 +2,17 @@ import java.util.Scanner;
 
 public class TwoInputNumbersMultiply {
 
+    public static int typeValue(){
+        Scanner inputValue= new Scanner(System.in);
+        int value=inputValue.nextInt();
+        return value;
+    }
+
     public static void main(String[] args) {
         System.out.println("Enter first number: ");
-        Scanner inputValue1= new Scanner(System.in);
-        int value1= inputValue1.nextInt();
-
+        int value1=typeValue();
         System.out.println("Enter second  number: ");
-        Scanner inputValue2= new Scanner(System.in);
-        int value2= inputValue2.nextInt();
+        int value2=typeValue();
 
         System.out.println("Multiplied two numbers is: " + value1*value2);
     }
