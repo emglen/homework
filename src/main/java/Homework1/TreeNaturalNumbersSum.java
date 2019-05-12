@@ -1,3 +1,5 @@
+package Homework1;
+
 public class TreeNaturalNumbersSum {
 
     public static int numbersSum(int one, int two, int three){

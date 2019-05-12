@@ -1,3 +1,5 @@
+package Homework1;
+
 public class Factorial {
 
     public static int getFactorial(int value){
@@ -15,6 +17,6 @@ public class Factorial {
 
     public static void main(String[] args) {
         int number = 5;
-        System.out.println("Factorial of " + number + " is: " + getFactorial(number));
+        System.out.println("Homework1.Factorial of " + number + " is: " + getFactorial(number));
     }
 }

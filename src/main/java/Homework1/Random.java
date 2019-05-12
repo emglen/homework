@@ -1,3 +1,5 @@
+package Homework1;
+
 public class Random {
 
     public static double getRandValue(){
@@ -6,6 +8,6 @@ public class Random {
     }
 
     public static void main(String[] args) {
-        System.out.println("Random number: " + getRandValue());
+        System.out.println("Homework1.Random number: " + getRandValue());
     }
 }
