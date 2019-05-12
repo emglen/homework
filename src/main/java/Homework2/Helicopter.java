@@ -9,7 +9,7 @@ public class Helicopter extends Vehicle {
     public void move() {
         System.out.println("You move on helicopter with amount of passangers: " + ampoundOfPassangers );
     }
-
+/*
     @Override
     public String toString(){
 
@@ -24,4 +24,5 @@ public class Helicopter extends Vehicle {
     public String equals(){
 
     }
+ */
 }

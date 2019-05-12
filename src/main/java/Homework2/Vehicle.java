@@ -6,12 +6,16 @@ public class Vehicle {
 
     void speedUp(int value){
         System.out.println("You speed up to: " + value + " kmh/h");
+        this.speed=value;
     }
     void applyBrake(int value){
         System.out.println("You applied brake after: " + value + " kmh/h");
     }
     void setModel(String model){
         this.model=model;
+    }
+    public String getModel(){
+        return model;
     }
     public void move(){
         System.out.println("You move on: " + model);
