@@ -26,9 +26,11 @@ public class Runner {
 
         roadBicycle.bicycleInfo();
 
-        Vehicle vehicle=new Vehicle();
-        vehicle.move();
-        vehicle.move(5);
+        Vehicle vehicle1=new Vehicle();
+        vehicle1.move();
+        vehicle1.move(5);
+        Vehicle vehicle2=new Vehicle(70,"Vehicle");
+        System.out.println("Vehicle2 model: " + vehicle2.getModel() + " speed is: " + vehicle2.speed );
 
         Bicycle bicycle1=new Bicycle();
         Bicycle bicycle2=new Bicycle(5,120);

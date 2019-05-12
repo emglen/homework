@@ -4,6 +4,13 @@ public class Vehicle {
     int speed=90;
     private String model="Alfa";
 
+    public Vehicle(){
+
+    }
+    public Vehicle(int speed, String model){
+        this.speed=speed;
+        this.model=model;
+    }
     void speedUp(int value){
         System.out.println("You speed up to: " + value + " kmh/h");
         this.speed=value;
