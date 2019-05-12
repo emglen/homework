@@ -1,8 +1,8 @@
 package Homework2;
 
 public class Vehicle {
-    int speed;
-    private String model;
+    int speed=90;
+    private String model="Alfa";
 
     void speedUp(int value){
         System.out.println("You speed up to: " + value + " kmh/h");
@@ -14,7 +14,7 @@ public class Vehicle {
         this.model=model;
     }
     public void move(){
-        System.out.println("You move on " + model);
+        System.out.println("You move on: " + model);
     }
     final  void stop(){
         System.out.println("You are stop");
