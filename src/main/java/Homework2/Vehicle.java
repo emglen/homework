@@ -20,6 +20,9 @@ public class Vehicle {
     public void move(){
         System.out.println("You move on: " + model);
     }
+    public void move(int value){
+        System.out.println("I love my vehicle? it is my " + value + " vehicle in life");
+    }
     final  void stop(){
         System.out.println("You are stop");
     }

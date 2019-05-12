@@ -10,6 +10,7 @@ public class Runner {
         mountainBicycle.speedUp(85);
         mountainBicycle.setModel("Mountains");
         mountainBicycle.applyBrake(180);
+        mountainBicycle.move(1);
 
         mountainBicycle.bicycleInfo();
 
@@ -21,8 +22,20 @@ public class Runner {
         roadBicycle.speed=60;
         roadBicycle.setModel("Road");
         roadBicycle.applyBrake(160);
+        roadBicycle.move(2);
 
         roadBicycle.bicycleInfo();
+
+        Vehicle vehicle=new Vehicle();
+        vehicle.move();
+        vehicle.move(5);
+
+        Bicycle bicycle1=new Bicycle();
+        Bicycle bicycle2=new Bicycle(5,120);
+        bicycle1.bicycleInfo();
+        bicycle2.bicycleInfo();
+        bicycle1.move();
+
 
     }
 }
