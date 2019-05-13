@@ -5,8 +5,8 @@ public class Bicycle extends Vehicle {
     protected int gear;
 
     public Bicycle() {
-        this.gear = 100;
-        this.id=1;
+        gear = 100;
+        id = 1;
     }
 
     public Bicycle(int id, int gear) {
@@ -15,7 +15,7 @@ public class Bicycle extends Vehicle {
     }
 
     public void changeGear(int value) {
-        this.gear = value;
+        gear = value;
     }
 
     @Override
@@ -25,7 +25,7 @@ public class Bicycle extends Vehicle {
 
     public void bicycleInfo() {
         System.out.println("Information about your Bicycle:");
-        System.out.println("Bicycle ID is: "+ id);
+        System.out.println("Bicycle ID is: " + id);
         System.out.println("Bicycle gear is: " + gear);
     }
 }

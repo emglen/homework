@@ -1,36 +1,44 @@
 package Homework2;
 
 public class Vehicle {
-    int speed=90;
-    private String model="Alfa";
+    int speed = 90;
+    private String model = "Alfa";
 
-    public Vehicle(){
+    public Vehicle() {
 
     }
-    public Vehicle(int speed, String model){
-        this.speed=speed;
-        this.model=model;
+
+    public Vehicle(int speed, String model) {
+        this.speed = speed;
+        this.model = model;
     }
-    void speedUp(int value){
+
+    void speedUp(int value) {
         System.out.println("You speed up to: " + value + " kmh/h");
-        this.speed=value;
+        speed = value;
     }
-    void applyBrake(int value){
+
+    void applyBrake(int value) {
         System.out.println("You applied brake after: " + value + " kmh/h");
     }
-    void setModel(String model){
-        this.model=model;
+
+    void setModel(String model) {
+        this.model = model;
     }
-    public String getModel(){
+
+    public String getModel() {
         return model;
     }
-    public void move(){
+
+    public void move() {
         System.out.println("You move on: " + model);
     }
-    public void move(int value){
+
+    public void move(int value) {
         System.out.println("I love my vehicle? it is my " + value + " vehicle in life");
     }
-    final  void stop(){
+
+    final void stop() {
         System.out.println("You are stop");
     }
 }
