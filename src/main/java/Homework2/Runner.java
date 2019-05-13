@@ -37,5 +37,13 @@ public class Runner {
         bicycle1.bicycleInfo();
         bicycle2.bicycleInfo();
         bicycle1.move();
+
+        Helicopter helicopter1=new Helicopter(100);
+        Helicopter helicopter2=new Helicopter(100);
+        Helicopter helicopter3=new Helicopter(120);
+        System.out.println("Helicopter1 == Helicopter2: " + helicopter1.equals(helicopter2));
+        System.out.println("Helicopter1 == Helicopter3: " + helicopter1.equals(helicopter3));
+        System.out.print("Helicopter1 == Helicopter2 with == : ");
+        System.out.println(helicopter1==helicopter2);
     }
 }
