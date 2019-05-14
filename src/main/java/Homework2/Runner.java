@@ -55,5 +55,8 @@ public class Runner {
         System.out.print("RoadBicycle1 == RoadBicycle with2 == : ");
         System.out.println(roadBicycle1==roadBicycle2);
 
+        Car.carType="Sedan";
+        System.out.println("Your car is "+ Car.carType + " with " + Car.transmission + " transmission");
+        Car.aboutCar();
     }
 }
