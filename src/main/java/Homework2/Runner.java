@@ -45,5 +45,15 @@ public class Runner {
         System.out.println("Helicopter1 == Helicopter3: " + helicopter1.equals(helicopter3));
         System.out.print("Helicopter1 == Helicopter2 with == : ");
         System.out.println(helicopter1==helicopter2);
+
+        RoadBicycle roadBicycle1=new RoadBicycle();
+        roadBicycle1.setRudderDepth(56);
+        RoadBicycle roadBicycle2=new RoadBicycle();
+        roadBicycle2.setRudderDepth(56);
+        System.out.println("RoadBicycle == RoadBicycle1: " + roadBicycle.equals(roadBicycle1));
+        System.out.println("RoadBicycle1 == RoadBicycle2: " + roadBicycle1.equals(roadBicycle2));
+        System.out.print("RoadBicycle1 == RoadBicycle with2 == : ");
+        System.out.println(roadBicycle1==roadBicycle2);
+
     }
 }
