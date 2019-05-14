@@ -15,7 +15,5 @@ public class MountainBicycle extends Bicycle {
     public void bicycleInfo() {
         super.bicycleInfo();
         System.out.println("Mountain Bicycle seat height is: " + seatHeight);
-        System.out.println("You Mountain Bicycle speed is: " + speed);
-        System.out.println("Model of Mountain Bicycle is: " + getModel());
     }
 }

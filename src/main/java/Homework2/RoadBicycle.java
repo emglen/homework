@@ -15,7 +15,5 @@ public class RoadBicycle extends Bicycle {
     public void bicycleInfo() {
         super.bicycleInfo();
         System.out.println("Road Bicycle rudder depth is: " + rudderDepth);
-        System.out.println("You Road Bicycle speed is: " + speed);
-        System.out.println("Model of Road Bicycle is: " + getModel());
     }
 }

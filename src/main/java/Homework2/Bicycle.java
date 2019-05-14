@@ -27,5 +27,7 @@ public class Bicycle extends Vehicle {
         System.out.println("Information about your Bicycle:");
         System.out.println("Bicycle ID is: " + id);
         System.out.println("Bicycle gear is: " + gear);
+        System.out.println("Your Bicycle speed is: " + speed);
+        System.out.println("Model of Bicycle is: " + getModel());
     }
 }

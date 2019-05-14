@@ -35,7 +35,7 @@ public class Vehicle {
     }
 
     public void move(int value) {
-        System.out.println("I love my vehicle? it is my " + value + " vehicle in life");
+        System.out.println("I love my vehicle, it is my " + value + " vehicle in life");
     }
 
     final void stop() {
