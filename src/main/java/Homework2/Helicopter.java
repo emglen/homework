@@ -16,7 +16,8 @@ public class Helicopter extends Vehicle {
 
     @Override
     public void move() {
-        System.out.println("You move on helicopter with amount of passangers: " + ampoundOfPassangers);
+        super.move();
+        System.out.print("helicopter with amount of passangers: " + ampoundOfPassangers);
     }
 
     @Override

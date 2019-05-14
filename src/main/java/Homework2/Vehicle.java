@@ -31,7 +31,7 @@ public class Vehicle {
     }
 
     public void move() {
-        System.out.println("You move on: " + model);
+        System.out.println("You move on " );
     }
 
     public void move(int value) {

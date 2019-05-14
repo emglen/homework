@@ -20,7 +20,8 @@ public class Bicycle extends Vehicle {
 
     @Override
     public void move() {
-        System.out.println("You move on Bicycle with gear: " + gear);
+        super.move();
+        System.out.print(" Bicycle with gear: " + gear);
     }
 
     public void bicycleInfo() {
