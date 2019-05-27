@@ -9,12 +9,7 @@ public abstract class Vehicle {
     }
 
     public abstract void speedUp(int value);
-      //  System.out.println("You speed up to: " + value + " kmh/h");
-
-
     public abstract void applyBrake(int value);
-
-      //  System.out.println("You applied brake after: " + value + " kmh/h");
 
     void setModel(String model) {
         this.model = model;
@@ -23,7 +18,6 @@ public abstract class Vehicle {
     public String getModel() {
         return model;
     }
-     //   System.out.println("You move on " );
 
     public abstract void move();
 

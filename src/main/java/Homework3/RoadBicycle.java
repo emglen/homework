@@ -2,8 +2,12 @@ package Homework3;
 
 import java.util.Objects;
 
-public class RoadBicycle extends Bicycle {
+public class RoadBicycle extends Bicycle implements Style, Passanger {
     private int rudderDepth;
+    private String color;
+    private String tuning;
+    private String nameOwner;
+    private int weigthOwner;
 
     void setRudderDepth(int rudderDepth) {
         this.rudderDepth = rudderDepth;
@@ -11,6 +15,30 @@ public class RoadBicycle extends Bicycle {
 
     int getRudderDepth() {
         return rudderDepth;
+    }
+    @Override
+    public void paint(String color){
+        this.color=color;
+        System.out.println("You painted you RoadBicycle in " + color + " color");
+    }
+    @Override
+    public void tuning(String value){
+        tuning=value;
+        System.out.println("You add to RoadBicycle " + value);
+    }
+
+    @Override
+    public void setPassangerWeight(int value){
+        weigthOwner=value;
+    }
+    @Override
+    public String getOwner(){
+        return nameOwner;
+    }
+    @Override
+    public void aboutOwner(){
+        System.out.println("Name:" + nameOwner);
+        System.out.println("Weight: "+ weigthOwner);
     }
 
     @Override
