@@ -1,6 +1,6 @@
 package Homework3;
 
-public class Bicycle extends Vehicle {
+public abstract class Bicycle extends Vehicle {
     public final int id;
     protected int gear;
 
@@ -14,13 +14,9 @@ public class Bicycle extends Vehicle {
         this.gear = gear;
     }
 
-    public void changeGear(int value) {
-        gear = value;
-    }
-
+    public abstract void changeGear(int value);
     @Override
     public void move() {
-        super.move();
         System.out.print(" Bicycle with gear: " + gear);
     }
 

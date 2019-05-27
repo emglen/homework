@@ -10,7 +10,7 @@ public class Runner {
         mountainBicycle.speedUp(85);
         mountainBicycle.setModel("Mountains");
         mountainBicycle.applyBrake(180);
-        mountainBicycle.move(1);
+        mountainBicycle.move();
 
         mountainBicycle.bicycleInfo();
 
@@ -22,21 +22,9 @@ public class Runner {
         roadBicycle.speed = 60;
         roadBicycle.setModel("Road");
         roadBicycle.applyBrake(160);
-        roadBicycle.move(2);
+        roadBicycle.move();
 
         roadBicycle.bicycleInfo();
-
-        Vehicle vehicle1 = new Vehicle();
-        vehicle1.move();
-        vehicle1.move(5);
-        Vehicle vehicle2 = new Vehicle(70, "Vehicle");
-        System.out.println("Vehicle2 model: " + vehicle2.getModel() + " speed is: " + vehicle2.speed);
-
-        Bicycle bicycle1 = new Bicycle();
-        Bicycle bicycle2 = new Bicycle(5, 120);
-        bicycle1.bicycleInfo();
-        bicycle2.bicycleInfo();
-        bicycle1.move();
 
         Helicopter helicopter1=new Helicopter(100);
         Helicopter helicopter2=new Helicopter(100);

@@ -31,4 +31,17 @@ public class RoadBicycle extends Bicycle {
     public int hashCode() {
         return Objects.hash(rudderDepth);
     }
+    @Override
+    public void changeGear(int value){
+        gear=value;
+        System.out.println("You change in RoadBicycle class gear to: " + value);
+    }
+    @Override
+    public void applyBrake(int value){
+        System.out.println("You applied brake on RoadBicycle after: " + value + " kmh/h");
+    }
+    @Override
+    public void speedUp(int value){
+        System.out.println("You speed on RoadBicycle up to: " + value + " kmh/h");
+    }
 }
