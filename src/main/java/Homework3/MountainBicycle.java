@@ -1,11 +1,10 @@
 package Homework3;
 
-public class MountainBicycle extends Bicycle implements Style, Passanger {
+public class MountainBicycle extends Bicycle implements Style, Control {
     private int seatHeight;
     private String color;
     private String tuning;
-    private String nameOwner;
-    private int weigthOwner;
+
     void setSeatHeight(int seatHeight) {
         this.seatHeight = seatHeight;
     }
@@ -13,29 +12,29 @@ public class MountainBicycle extends Bicycle implements Style, Passanger {
     int getSeatHeight() {
         return seatHeight;
     }
+
     @Override
     public void paint(String color){
         this.color=color;
         System.out.println("You painted you MountainBicycle in " + color + " color");
     }
+
     @Override
     public void tuning(String value){
         tuning=value;
         System.out.println("You add to MountainBicycle " + value);
     }
 
-    @Override
-    public void setPassangerWeight(int value){
-        weigthOwner=value;
+    public void increaseSpeed(int newSpeed){
+        System.out.println("You increase speed to: " + newSpeed);
     }
-    @Override
-    public String getOwner(){
-        return nameOwner;
+
+    public  void reduceSpeed(int newSpeed){
+        System.out.println("You reduce speed to: " + newSpeed);
     }
-    @Override
-    public void aboutOwner(){
-        System.out.println("Name:" + nameOwner);
-        System.out.println("Weight: "+ weigthOwner);
+
+    public void stay(){
+        System.out.println("You are stayed on your RoadBicycle");
     }
 
     @Override

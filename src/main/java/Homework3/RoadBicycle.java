@@ -2,12 +2,10 @@ package Homework3;
 
 import java.util.Objects;
 
-public class RoadBicycle extends Bicycle implements Style, Passanger {
+public class RoadBicycle extends Bicycle implements Style, Control {
     private int rudderDepth;
     private String color;
     private String tuning;
-    private String nameOwner;
-    private int weigthOwner;
 
     void setRudderDepth(int rudderDepth) {
         this.rudderDepth = rudderDepth;
@@ -27,18 +25,16 @@ public class RoadBicycle extends Bicycle implements Style, Passanger {
         System.out.println("You add to RoadBicycle " + value);
     }
 
-    @Override
-    public void setPassangerWeight(int value){
-        weigthOwner=value;
+    public void increaseSpeed(int newSpeed){
+        System.out.println("You increase speed to: " + newSpeed);
     }
-    @Override
-    public String getOwner(){
-        return nameOwner;
-    }
-    @Override
-    public void aboutOwner(){
-        System.out.println("Name:" + nameOwner);
-        System.out.println("Weight: "+ weigthOwner);
+
+   public  void reduceSpeed(int newSpeed){
+       System.out.println("You reduce speed to: " + newSpeed);
+   }
+
+   public void stay(){
+        System.out.println("You are stayed on your RoadBicycle");
     }
 
     @Override
