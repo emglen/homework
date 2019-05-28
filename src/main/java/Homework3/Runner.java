@@ -22,6 +22,8 @@ public class Runner {
         System.out.println("Bicycle have " + mountainBicycle.numberWheels + " wheels");
         Control.focus();
 
+        mountainBicycle.reduceSpeed();
+
         mountainBicycle.bicycleInfo();
 
         RoadBicycle roadBicycle = new RoadBicycle();
@@ -46,5 +48,6 @@ public class Runner {
 
         roadBicycle.bicycleInfo();
 
+        roadBicycle.increaseSpeed();
     }
 }

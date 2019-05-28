@@ -33,6 +33,10 @@ public class MountainBicycle extends Bicycle implements Style, Control {
         System.out.println("You reduce speed to: " + newSpeed);
     }
 
+    public void reduceSpeed(){
+        System.out.println("Small speed");
+    }
+
     public void stay(){
         System.out.println("You are stayed on your MountainBicycle");
     }

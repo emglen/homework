@@ -29,6 +29,10 @@ public class RoadBicycle extends Bicycle implements Style, Control {
         System.out.println("You increase speed to: " + newSpeed);
     }
 
+    public void increaseSpeed(){
+        System.out.println("Big speed");
+    }
+
    public  void reduceSpeed(int newSpeed){
        System.out.println("You reduce speed to: " + newSpeed);
    }
