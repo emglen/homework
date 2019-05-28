@@ -20,6 +20,7 @@ public class Runner {
         mountainBicycle.tuning("Not tuning");
         mountainBicycle.stay();
         System.out.println("Bicycle have " + mountainBicycle.numberWheels + " wheels");
+
         Control.focus();
 
         mountainBicycle.reduceSpeed();
@@ -44,6 +45,7 @@ public class Runner {
         roadBicycle.tuning("Ksenon");
         roadBicycle.stay();
         System.out.println("Bicycle have " + roadBicycle.numberWheels + " wheels");
+
         Control.focus();
 
         roadBicycle.bicycleInfo();
