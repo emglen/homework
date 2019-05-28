@@ -34,7 +34,7 @@ public class MountainBicycle extends Bicycle implements Style, Control {
     }
 
     public void stay(){
-        System.out.println("You are stayed on your RoadBicycle");
+        System.out.println("You are stayed on your MountainBicycle");
     }
 
     @Override

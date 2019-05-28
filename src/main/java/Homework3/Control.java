@@ -1,7 +1,5 @@
 package Homework3;
 
-import static java.lang.System.*;
-
 public interface Control {
     void increaseSpeed(int newSpeed);
     void reduceSpeed(int newSpeed);
@@ -12,5 +10,8 @@ public interface Control {
     }
     default void turnRight(){
         System.out.println("You turned on right");
+    }
+    static void focus(){
+        System.out.println("You doing good focus on your Bicycle");
     }
 }

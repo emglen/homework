@@ -5,4 +5,8 @@ public interface Style {
 
     void paint(String color);
     void tuning(String value);
+
+    static void standartColor(){
+        System.out.println("You changed color your car");
+    }
 }
