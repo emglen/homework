@@ -51,5 +51,20 @@ public class Runner {
         roadBicycle.bicycleInfo();
 
         roadBicycle.increaseSpeed();
+
+        Singelton.getInstance().setValue("value1");
+        Singelton.getInstance().setValue("value2");
+        System.out.println("Singelton value: " + Singelton.getInstance().getValue() );
+
+        Singelton firstSingelton = Singelton.getInstance();
+        Singelton secondSingelton = Singelton.getInstance();
+        firstSingelton.setValue("firstSingelton");
+        System.out.println("Singletone value is: " + firstSingelton.getValue());
+        secondSingelton.setValue("secondSingelton");
+        System.out.println("Singelton value is: " + firstSingelton.getValue() + " and " + secondSingelton.getValue());
+
+        System.out.println(firstSingelton.toString());
+        System.out.println(secondSingelton.toString());
+        System.out.println(Singelton.getInstance().toString());
     }
 }
