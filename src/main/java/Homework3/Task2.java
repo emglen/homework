@@ -41,6 +41,9 @@ public class Task2 {
         System.out.println("Min integer: " + minValue);
     }
     public static void main(String[] args) {
-result(3);
+        System.out.println("Enter 3 value:");
+        result(3);
+        System.out.println("Enter 5 value:");
+        result(5);
     }
 }
