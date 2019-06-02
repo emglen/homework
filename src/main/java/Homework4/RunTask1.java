@@ -1,10 +1,8 @@
 package Homework4;
 
-import javax.xml.crypto.Data;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
-import static java.lang.String.valueOf;
+import java.util.Random;
 
 public class RunTask1 {
     public static void getToday(){
@@ -35,7 +33,12 @@ public class RunTask1 {
         }
     }
 
+    public static int randomValue() {
+        int pick = new Random().nextInt(Val30.values().length);
+        return Val30.values()[pick].ordinal();
+    }
     public static void main(String[] args) {
         getToday();
+        System.out.println("Random value is: " + randomValue());
     }
 }
