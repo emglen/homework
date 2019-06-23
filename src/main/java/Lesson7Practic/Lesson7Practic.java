@@ -42,8 +42,6 @@ public class Lesson7Practic {
         for (int i=1;i<10;i++){
             list2.add(i);
         }
-        List<Integer> evenNumberArr=list2.stream().filter(i->i%2==0).toArray(Integer[]::new);
-        System.out.println(evenNumberArr);
 
         List<String> memberNames=new ArrayList<>();
         memberNames.add("Amitabh");
@@ -70,6 +68,5 @@ public class Lesson7Practic {
         Integer[] eventNumbersArr=memberNames1.stream().filter(i->i%2==0).toArray(Integer[]::new);
 
         memberNames1.parallelStream().filter(i->i%2==0).forEach(System.out::println);
-
     }
 }
